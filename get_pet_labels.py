@@ -105,7 +105,7 @@ def get_pet_labels(image_dir):
             # pet label - otherwise print an error message because indicates 
             # duplicate files (filenames)
             if in_files[idx] not in results_dic:
-                results_dic[in_files[idx]] = pet_label_name
+                results_dic[in_files[idx]] = [pet_label_name]
               
             else:
                 print("** Warning: Duplicate files exist in directory:", in_files[idx])
